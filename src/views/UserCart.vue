@@ -209,7 +209,7 @@ export default {
       emitter.emit('update-cart')
     },
     getProduct(id) {
-      this.$router.push(`/user/product/${id}`)
+      this.$router.push(`/product/${id}`)
     },
     async getCart() {
       const url = `${import.meta.env.VITE_APP_API}/api/${import.meta.env.VITE_APP_PATH}/cart`

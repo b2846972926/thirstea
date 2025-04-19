@@ -57,7 +57,7 @@ export default {
       const response = await axios.post(url, { data: cart })
       loader.hide()
       this.$httpMessageState(response, '加入購物車')
-      this.$router.push('/user/cart')
+      this.$router.push('/cart')
     },
   },
   created() {

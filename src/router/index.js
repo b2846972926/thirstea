@@ -27,7 +27,7 @@ const router = createRouter({
       ],
     },
     {
-      path: '/user',
+      path: '/',
       component: () => import('../views/UserboardView.vue'),
       children: [
         {

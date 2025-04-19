@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <div class="container d-flex">
-        <router-link class="navbar-brand" to="/user"
+        <router-link class="navbar-brand" to="/"
           ><img src="../assets/thirsteaLogo.jpg" alt="logo" class="img-fluid" style="height: 56px"
         /></router-link>
         <button
@@ -18,9 +18,9 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav ms-auto">
-            <router-link to="/user/aboutus" class="nav-link me-3">關於我們</router-link>
-            <router-link to="/user/products" class="nav-link me-3">產品列表</router-link>
-            <router-link to="/user/cart" class="nav-link me-3">
+            <router-link to="/aboutus" class="nav-link me-3">關於我們</router-link>
+            <router-link to="/products" class="nav-link me-3">產品列表</router-link>
+            <router-link to="/cart" class="nav-link me-3">
               <div class="position-relative d-inline-block">
                 <i class="bi bi-cart4 fs-5"></i>
                 <span
