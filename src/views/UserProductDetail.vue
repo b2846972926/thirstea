@@ -28,6 +28,7 @@
 
 <script>
 import axios from 'axios'
+import emitter from '@/methods/emitter'
 export default {
   data() {
     return {
@@ -42,7 +43,6 @@ export default {
       const response = await axios.get(api)
       loader.hide()
       console.log(response.data)
-      this.isLoading = false
       if (response.data.success) {
         this.product = response.data.product
       }
@@ -57,7 +57,8 @@ export default {
       const response = await axios.post(url, { data: cart })
       loader.hide()
       this.$httpMessageState(response, '加入購物車')
-      this.$router.push('/cart')
+      this.$router.push('/products')
+      emitter.emit('update-cart')
     },
   },
   created() {

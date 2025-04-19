@@ -96,7 +96,7 @@ export default {
       loader.hide()
     },
     getProduct(id) {
-      this.$router.push(`/product/${id}`)
+      this.$router.push(`/products/${id}`)
     },
   },
   created() {
