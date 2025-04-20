@@ -20,13 +20,14 @@
           <div class="navbar-nav ms-auto">
             <router-link to="/aboutus" class="nav-link me-3">關於我們</router-link>
             <router-link to="/products" class="nav-link me-3">產品列表</router-link>
-            <router-link to="/cart" class="nav-link me-3">
-              <div class="position-relative d-inline-block">
-                <i class="bi bi-cart4 fs-5"></i>
+            <router-link to="/dashboard/products" class="nav-link me-3">後台管理</router-link>
+            <router-link to="/cart" class="nav-link me-3 d-flex align-items-center">
+              <div class="position-relative" style="width: 24px; height: 24px">
+                <i class="bi bi-cart4 fs-4" style="line-height: 1"></i>
                 <span
-                  class="position-absolute badge rounded-pill bg-danger"
-                  style="top: -8px; right: -10px; font-size: 0.6rem"
                   v-if="cart.carts.length > 0"
+                  class="badge bg-danger rounded-pill position-absolute"
+                  style="top: -6px; right: -6px; font-size: 0.6rem"
                 >
                   {{ cart.carts.length }}
                 </span>

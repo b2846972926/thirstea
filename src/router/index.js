@@ -5,10 +5,6 @@ const router = createRouter({
   linkActiveClass: 'active',
   routes: [
     {
-      path: '/login',
-      component: () => import('../views/LoginView.vue'),
-    },
-    {
       path: '/dashboard',
       component: () => import('../views/DashboardView.vue'),
       children: [
@@ -33,6 +29,10 @@ const router = createRouter({
         {
           path: '',
           component: () => import('../views/UserHome.vue'),
+        },
+        {
+          path: 'login',
+          component: () => import('../views/LoginView.vue'),
         },
         {
           path: 'cart',
