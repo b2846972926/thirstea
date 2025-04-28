@@ -263,7 +263,7 @@ export default {
       console.log(res)
       if (res.data.success) {
         const orderId = res.data.orderId
-        this.$router.push(`/user/checkout/${orderId}`)
+        this.$router.push(`/checkout/${orderId}`)
       }
     },
   },
