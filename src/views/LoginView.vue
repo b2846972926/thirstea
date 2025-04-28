@@ -59,12 +59,6 @@ export default {
         this.$router.push('/dashboard/products')
       }
     },
-    async createOrder() {
-      const url = `${import.meta.env.VUE_APP_API}api/${import.meta.env.VUE_APP_PATH}/order`
-      const order = this.form
-      const res = await axios.post(url, { data: order })
-      console.log(res)
-    },
   },
   async created() {
     const token = document.cookie.replace(/(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/, '$1')

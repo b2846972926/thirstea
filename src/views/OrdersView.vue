@@ -60,7 +60,7 @@
 
 <script>
 import DelModal from '@/components/DelModal.vue'
-import OrderModal from '@/components/orderModal.vue'
+import OrderModal from '@/components/OrderModal.vue'
 import AppPagination from '@/components/AppPagination.vue'
 import axios from 'axios'
 
